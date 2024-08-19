@@ -36,28 +36,6 @@ public class NumberFormat {
         return false;
     }
 
-    public static void printNumber(long input){
-        String output = Long.toString(input);
-
-        System.out.print("입력한 값은 ");
-        int length = output.length();
-        int check = length%3;
-
-        for (int i = 0; i < output.length(); i++) {
-            
-            if(check == i && i!=0){
-                System.out.print(","); 
-            }
-            else if ((i - check) % 3 == 0 && i != 0){
-                System.out.print(",");
-            }
-            System.out.print(output.charAt(i));
-        }
-
-        System.out.print("입니다.");
-
-    }
-
     public static void printNumber(String input){
 
         System.out.print("입력한 값은 ");
